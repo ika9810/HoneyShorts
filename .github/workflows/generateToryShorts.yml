@@ -1,4 +1,4 @@
-name: Auto Today's ToryShorts (Daliy)
+name: Auto Today's HoneyShorts (Daliy)
 
 on:
   schedule:
@@ -32,7 +32,7 @@ jobs:
          python ./downloadAsset.py
     - name: GENERATE
       run: |
-         python ./generateToryShorts.py
+         python ./generateHoneyShorts.py
     - name: Archive
       run: |
          python ./archive.py
@@ -41,7 +41,7 @@ jobs:
         git config --local user.email "ika7204@naver.com"
         git config --local user.name "ika9810"
         git add .
-        git commit -m "⚙️[Generate]Today's ToryShorts⚙️"
+        git commit -m "⚙️[Generate]Today's HoneyShorts⚙️"
     - name: Push
       uses: ad-m/github-push-action@master
       with:
