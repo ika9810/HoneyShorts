@@ -25,7 +25,7 @@ jobs:
         pip install requests
         pip install pytz
         pip install moviepy
-        pip uninstall pillow
+        pip uninstall Pillow --yes
         pip install Pillow==9.5.0
     - name: Drive
       run: |
