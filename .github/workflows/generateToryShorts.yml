@@ -2,7 +2,7 @@ name: Auto Today's HoneyShorts (Daliy)
 
 on:
   schedule:
-    - cron: '0 4 * * *' # UTC 시간으로는 4시에 실행 (한국 시간으로는 오후 1시)
+    - cron: '0 5 * * *' # UTC 시간으로는 4시에 실행 (한국 시간으로는 오후 1시)
 
 jobs:
   build:
